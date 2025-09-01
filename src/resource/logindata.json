@@ -1,0 +1,18 @@
+{
+  "loginData": [
+    {
+      "scenario": "valid login",
+      "username": "errajatsharan@gmail.com",
+      "password": "Admin@123",
+      "expectedUrl": "/dashboard",
+      "shouldSucceed": true
+    },
+    {
+      "scenario": "invalid password",
+      "username": "user1@example.com",
+      "password": "wrongpass",
+      "expectedError": "Invalid username or password.",
+      "shouldSucceed": false
+    }
+  ]
+}
