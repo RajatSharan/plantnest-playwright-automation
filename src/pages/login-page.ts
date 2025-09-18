@@ -5,9 +5,9 @@ export class LoginPage{
     readonly page:Page
     readonly usernameInput ="#username"
     readonly passwordInput ="#password"
-    readonly signInButton="#signInButton"
-
-
+    readonly signInButton= "#signInButton"
+    readonly signUpButton = "a[href='/register']"
+    readonly forgotPasswordButton = "a[href='/forgot-password']"
 
     constructor(page:Page){
         this.page=page
@@ -28,6 +28,12 @@ export class LoginPage{
     async clickONSignIN(){
         Logger.info("Clicking on Sign In button");
         await this.page.click(this.signInButton)
+    }
+    async clickONSignUP(){
+        await this.page.click(this.signUpButton)
+    }
+       async clickONForgotPassword(){
+        await this.page.click(this.forgotPasswordButton)
     }
 
 }

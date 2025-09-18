@@ -24,3 +24,17 @@ test.describe("User Authentication", () => {
     });
   }
 });
+
+test("To verifiy that user is able to redirect on signup page",async({page})=>{
+ 
+  const loginpage = new LoginPage(page);
+  await loginpage.navigateTo(pageUrl)
+  await loginpage.clickONSignUP()
+})
+
+test("To verifiy that user is able to redirect on forgot password",async({page})=>{
+ 
+  const loginpage = new LoginPage(page);
+  await loginpage.navigateTo(pageUrl)
+  await loginpage.clickONForgotPassword()
+})
