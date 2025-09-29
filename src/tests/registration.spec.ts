@@ -40,6 +40,6 @@ test.describe('User Registration', () => {
     );
     await register.clickontermsandconditionCheckbox()
     await register.clickONRegister()
-    //await expect(page.locator('.success-message')).toBeVisible();
+    await expect(page.locator('//div[contains(@class, "alert-success")]')).toBeVisible();
   });
 });
