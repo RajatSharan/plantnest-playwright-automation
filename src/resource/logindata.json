@@ -2,7 +2,7 @@
   "loginData": [
     {
       "scenario": "valid login",
-      "username": "errajatsharan@gmail.com",
+      "username": "Arely_Kuphal32@yahoo.com",
       "password": "Admin@123",
       "expectedUrl": "/dashboard",
       "shouldSucceed": true
