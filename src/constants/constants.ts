@@ -4,6 +4,7 @@ import path from 'path';
 
 export const BASE_URL = path.resolve(process.cwd(), 'src/environment/dev.json');
 export const LOGIN_DATA_PATH =path.resolve(process.cwd(),'src/resource/logindata.json')
+export const VALID_USER_PATH =path.resolve(process.cwd(),'src/resource/userData.json')
 
 
 
