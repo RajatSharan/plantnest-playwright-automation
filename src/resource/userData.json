@@ -1,0 +1,10 @@
+{
+  "validUser": [
+    {
+      "username": "rajatsharan05@gmail.com",
+      "password": "Admin@123",
+      "expectedUrl": "/dashboard",
+      "shouldSucceed": true
+    }
+  ]
+}
