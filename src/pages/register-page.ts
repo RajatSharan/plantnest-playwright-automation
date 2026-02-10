@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { Logger } from "../loggers/customLogger";
+import { Logger } from "../loggers/customLogger.js";
 export class registerPage {
   readonly page: Page;
   readonly firstNameInput = "#firstName";

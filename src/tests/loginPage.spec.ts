@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { BASE_URL } from "../constants/constants";
-import { LoginPage } from "../pages/login-page";
-import { LOGIN_DATA_PATH } from "../constants/constants";
-import { getJsonArray, getTestData } from "../utils/testdatareader";
+import { BASE_URL } from "../constants/constants.js";
+import { LoginPage } from "../pages/login-page.js";
+import { LOGIN_DATA_PATH } from "../constants/constants.js";
+import { getJsonArray, getTestData } from "../utils/testdatareader.js";
 
 const logindata = getJsonArray("loginData", LOGIN_DATA_PATH);
 const pageUrl = getTestData("baseURL", BASE_URL);

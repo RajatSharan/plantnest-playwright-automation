@@ -1,8 +1,8 @@
 import { test, expect, Page } from "@playwright/test";
-import { registerPage } from "../pages/register-page";
-import { LoginPage } from "../pages/login-page";
-import { BASE_URL } from "../constants/constants";
-import { getTestData } from "../utils/testdatareader";
+import { registerPage } from "../pages/register-page.js";
+import { LoginPage } from "../pages/login-page.js";
+import { BASE_URL } from "../constants/constants.js";
+import { getTestData } from "../utils/testdatareader.js";
 import { faker } from "@faker-js/faker";
 
 const pageUrl = getTestData("baseURL", BASE_URL);

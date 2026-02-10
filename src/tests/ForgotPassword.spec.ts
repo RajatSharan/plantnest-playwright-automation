@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/login-page";
-import { BASE_URL, LOGIN_DATA_PATH } from "../constants/constants";
-import { getTestData, getJsonArray } from "../utils/testdatareader";
-import { ForgotPage } from "../pages/forgot-page";
+import { LoginPage } from "../pages/login-page.js";
+import { BASE_URL, LOGIN_DATA_PATH } from "../constants/constants.js";
+import { getTestData, getJsonArray } from "../utils/testdatareader.js";
+import { ForgotPage } from "../pages/forgot-page.js";
 
 const pageUrl = getTestData("baseURL", BASE_URL);
 test("Verfiy the Forgot password page", async ({ page }) => {
